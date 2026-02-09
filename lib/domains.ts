@@ -3,8 +3,8 @@ import { headers } from "next/headers";
 export const MAIN_DOMAIN = "myworldsart.world";
 export const AUTOSLICIO_DOMAIN = "autoslicio.myworldsart.world";
 
-export function getHostname() {
-  const host = headers().get("host") ?? "";
+export async function getHostname() {
+  const host = (await headers()).get("host") ?? "";
   return host.split(":")[0].toLowerCase();
 }
 

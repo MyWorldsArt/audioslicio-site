@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getBaseUrl, getHostname, isAutoslicioHost } from "@/lib/domains";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const hostname = getHostname();
+  const hostname = await getHostname();
   const baseUrl = getBaseUrl(hostname);
   const canonicalUrl = isAutoslicioHost(hostname)
     ? new URL("/", baseUrl)

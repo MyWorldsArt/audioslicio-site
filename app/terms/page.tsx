@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getBaseUrl, getHostname } from "@/lib/domains";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const hostname = getHostname();
+  const hostname = await getHostname();
   const baseUrl = getBaseUrl(hostname);
 
   return {
