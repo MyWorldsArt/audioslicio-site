@@ -140,7 +140,7 @@ export default function Home() {
             subscription details when possible.
           </p>
           <p className="mt-4 text-sm font-medium text-slate-900">
-            support@audioslicer.myworldsart.world
+            mmyworldsart@gmail.com
           </p>
           <div className="mt-6">
             <Link
@@ -155,3 +155,4 @@ export default function Home() {
     </div>
   );
 }
+

@@ -16,7 +16,7 @@ export default function SupportPage() {
       <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6">
         <h2 className="text-lg font-semibold text-slate-900">Contact</h2>
         <p className="mt-3 text-sm text-slate-600">
-          Email support: <span className="font-medium text-slate-900">support@audioslicer.myworldsart.world</span>
+          Email support: <span className="font-medium text-slate-900">mmyworldsart@gmail.com</span>
         </p>
         <p className="mt-2 text-xs text-slate-500">
           Expected response time: 1-2 business days.
@@ -34,3 +34,4 @@ export default function SupportPage() {
     </div>
   );
 }
+
