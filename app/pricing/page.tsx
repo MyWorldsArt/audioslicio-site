@@ -39,7 +39,7 @@ export default function PricingPage() {
             <li>Batch slicing workflows.</li>
             <li>Advanced trim and preview tools.</li>
             <li>Priority updates and feature drops.</li>
-            <li>License activation tied to your Paddle subscription ID.</li>
+            <li>License activation via Paddle Subscription ID.</li>
           </ul>
           <Link
             href="https://checkout.paddle.com/"
@@ -62,9 +62,16 @@ export default function PricingPage() {
             The app refreshes your license on open when near renewal or expired.
             Internet access is required around the renewal date.
           </li>
+          <li>
+            A short grace period may apply if renewal is pending; Pro features
+            resume once the license refresh succeeds.
+          </li>
         </ul>
         <div className="mt-6 text-sm text-slate-600">
-          Questions about billing? Visit <Link href="/support" className="font-medium text-slate-900">Support</Link>.
+          Questions about billing? Visit{" "}
+          <Link href="/support" className="font-medium text-slate-900">
+            Support
+          </Link>.
         </div>
       </div>
     </div>

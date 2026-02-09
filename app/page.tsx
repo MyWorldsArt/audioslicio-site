@@ -90,6 +90,10 @@ export default function Home() {
               <li>Subscribe to AudioSlicer Pro through Paddle.</li>
               <li>Activate in-app using your Paddle Subscription ID.</li>
             </ol>
+            <p className="mt-4 text-xs text-slate-500">
+              Pro licenses refresh near renewal and require internet access at
+              renewal time.
+            </p>
           </div>
         </div>
       </section>
@@ -155,4 +159,3 @@ export default function Home() {
     </div>
   );
 }
-
