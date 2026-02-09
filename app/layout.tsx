@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 const siteUrl = "https://audioslicer.myworldsart.world";
+const iconVersion = "2";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -27,8 +28,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "/icon.png",
-    apple: "/icon.png",
+    icon: `/icon.png?v=${iconVersion}`,
+    apple: `/apple-icon.png?v=${iconVersion}`,
+    shortcut: `/favicon.ico?v=${iconVersion}`,
   },
   openGraph: {
     title: "AudioSlicer",
