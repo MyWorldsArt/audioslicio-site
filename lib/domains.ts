@@ -1,25 +1,5 @@
-import { headers } from "next/headers";
+﻿export const MAIN_DOMAIN = "audioslicer.myworldsart.world";
 
-export const MAIN_DOMAIN = "myworldsart.world";
-export const AUTOSLICIO_DOMAIN = "autoslicio.myworldsart.world";
-
-export async function getHostname() {
-  const host = (await headers()).get("host") ?? "";
-  return host.split(":")[0].toLowerCase();
-}
-
-export function isAutoslicioHost(hostname: string) {
-  return (
-    hostname === AUTOSLICIO_DOMAIN ||
-    hostname === "autoslicio.localhost" ||
-    hostname === "autoslicio.local"
-  );
-}
-
-export function getBaseUrl(hostname: string) {
-  if (isAutoslicioHost(hostname)) {
-    return `https://${AUTOSLICIO_DOMAIN}`;
-  }
-
+export function getBaseUrl() {
   return `https://${MAIN_DOMAIN}`;
 }
